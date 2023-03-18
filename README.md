@@ -22,7 +22,7 @@ COPYRIGHT_WEB="page.com.co"
 COPYRIGHT_YEAR="2023" #Si se desea que sea el año en curso, no cree esta variable de entorno.
 ```
 
-# Metodos Resumiidos
+# Metodos Resumidos
 
 | SINTAXIS | DESCRIPCIÓN |
 | ----------- | ----------- |
