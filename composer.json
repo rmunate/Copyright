@@ -1,0 +1,38 @@
+{
+    "name": "rmunate/copyright",
+    "description": "Defina los datos del autor del software de una manera organizada desde las variables de entorno, invoque los métodos que requiera donde le sea necesario y renderice el HTML con una sola línea de código. ",
+    "keywords": [
+        "artisan",
+        "laravel",
+        "CLI",
+        "copyright",
+        "altum",
+        "rmunate"
+    ],
+    "homepage": "https://github.com/rmunate/Copyright",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Rmunate\\Copyright\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Raul Mauricio Uñate Castro",
+            "email": "raulmauriciounate@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+    },
+    "extra" : {
+        "branch-alias" : {
+            "dev-main": "1.0.x-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
