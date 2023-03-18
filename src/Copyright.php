@@ -157,7 +157,7 @@ class Copyright
     public function get(array $valores = []){
         if (count($valores) > 0) {
             if (in_array('copyright')) {
-                $data['copyright'] = $this->getCopyright();
+                $data['copyright'] = $this->getName();
             }
             if (in_array('version')) {
                 $data['version'] = $this->getVersion();
@@ -182,7 +182,7 @@ class Copyright
             }
         } else {
             $data = [
-                'copyright' => $this->getCopyright(),
+                'copyright' => $this->getName(),
                 'version' => $this->getVersion(),
                 'author' => $this->getAuthor(),
                 'keywords' => $this->getKeywords(),
@@ -198,32 +198,32 @@ class Copyright
     public function getHTML(array $valores = []){
         if (count($valores) > 0) {
             if (in_array('copyright')) {
-                $data['copyright'] = $this->getCopyright();
+                $data['copyright'] = $this->getNameHTML();
             }
             if (in_array('version')) {
-                $data['version'] = $this->getVersion();
+                $data['version'] = $this->getVersionHTML();
             }
             if (in_array('author')) {
-                $data['author'] = $this->getAuthor();
+                $data['author'] = $this->getAuthorHTML();
             }
             if (in_array('keywords')) {
-                $data['keywords'] = $this->getKeywords();
+                $data['keywords'] = $this->getKeywordsHTML();
             }
             if (in_array('developer')) {
-                $data['developer'] = $this->getDeveloper();
+                $data['developer'] = $this->getDeveloperHTML();
             }
             if (in_array('email')) {
-                $data['email'] = $this->getEmail();
+                $data['email'] = $this->getEmailHTML();
             }
             if (in_array('web')) {
-                $data['web'] = $this->getWeb();
+                $data['web'] = $this->getWebHTML();
             }
             if (in_array('year')) {
-                $data['year'] = $this->getYear();
+                $data['year'] = $this->getYearHTML();
             }
         } else {
             $data = [
-                'copyright' => $this->getCopyrightHTML(),
+                'copyright' => $this->getNameHTML(),
                 'version' => $this->getVersionHTML(),
                 'author' => $this->getAuthorHTML(),
                 'keywords' => $this->getKeywordsHTML(),
